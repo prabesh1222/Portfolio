@@ -9,21 +9,24 @@ const Projects = () => {
             image: proj1,
             title: 'E-Commerce Platform',
             desc: 'Modern e-commerce solution',
-            tech: ['React', 'Node.js', 'MySql']
+            tech: ['React', 'Node.js', 'MySql'],
+            link: '#'
         },
         {
             id: 2,
             image: proj2,
             title: 'DailoKhata',
             desc: 'Modern Ledger Management System',
-            tech: ['React', 'Node.js', 'MySql']
+            tech: ['React', 'Node.js', 'MySql'],
+            link: '#'
         },
          {
             id: 3,
-            image: proj2,
-            title: 'ProjectAdvance',
-            desc: 'Modern Ledger Management System',
-            tech: ['React', 'Node.js', 'MySql']
+            image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=800&auto=format&fit=crop',
+            title: 'Platinum Smile Cleaning',
+            desc: 'Professional Cleaning Company in Dubai',
+            tech: ['React', 'Tailwind CSS', 'Vite'],
+            link: 'https://platinumsmilecleaning.com/'
         }
     ];
 
@@ -42,7 +45,7 @@ const Projects = () => {
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                     {projects.map((project) => (
-                        <div key={project.id} className='bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 '>
+                        <a href={project.link} target={project.link !== '#' ? '_blank' : '_self'} rel="noopener noreferrer" key={project.id} className='bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 block'>
                             <img src={project.image} alt={project.title} className='w-full h-44 object-cover hover:opacity-90 transition-opacity duration-300' />
                             <div className='p-4'>
                                 <h3 className='text-lg font-semibold text-white group-hover:text-primary transition-colors '>
@@ -63,7 +66,7 @@ const Projects = () => {
 
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
             </div>
