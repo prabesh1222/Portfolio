@@ -15,12 +15,12 @@ const Projects = () => {
         {
             id: 2,
             image: proj2,
-            title: 'DailoKhata',
-            desc: 'Modern Ledger Management System',
+            title: 'GPCAR',
+            desc: 'College Website',
             tech: ['React', 'Node.js', 'MySql'],
-            link: '#'
+            link: 'https://gpcar.vercel.app/'
         },
-         {
+        {
             id: 3,
             image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=800&auto=format&fit=crop',
             title: 'Platinum Smile Cleaning',
