@@ -2,17 +2,18 @@ import React from 'react'
 import proj1 from '../assets/logo.png';
 import proj2 from '../assets/proj2.png';
 import img from '../assets/image.png';
+import image from '../assets/logo copy.png';
 
 
 const Projects = () => {
     const projects = [
         {
             id: 1,
-            image: proj1,
-            title: 'DailoKhata',
-            desc: 'Modern e-commerce solution',
-            tech: ['React', 'Node.js', 'MySql'],
-            link: 'https://dailokhata.vercel.app/',
+            image: image,
+            title: 'E-commerce website',
+            desc: 'My first website built for practice',
+            tech: ['React', 'Node.js'],
+            link: 'https://firstecommerce-website.vercel.app/',
             fit: 'object-contain object-center p-4 bg-white'
         },
         {
