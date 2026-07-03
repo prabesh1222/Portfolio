@@ -17,6 +17,15 @@ const Projects = () => {
         },
         {
             id: 2,
+            image: proj1,
+            title: 'DailoKhata',
+            desc: 'Modern e-commerce solution',
+            tech: ['React', 'Node.js', 'MySql'],
+            link: 'https://dailokhata.vercel.app/',
+            fit: 'object-contain object-center p-4 bg-white'
+        },
+        {
+            id: 3,
             image: img,
             title: 'GPCAR',
             desc: 'College Website',
@@ -25,13 +34,14 @@ const Projects = () => {
             fit: 'object-contain object-center p-2 bg-white'
         },
         {
-            id: 3,
+            id: 4,
             image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=800&auto=format&fit=crop',
             title: 'Platinum Smile Cleaning',
             desc: 'Professional Cleaning Company in Dubai',
             tech: ['React', 'Tailwind CSS', 'Vite'],
             link: 'https://platinumsmilecleaning.com/'
         }
+
     ];
 
     return (
